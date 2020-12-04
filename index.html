@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Weather Forecast Web App</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Weather Forecast Web App</h1>
+            <form class="form" name="myForm" onsubmit="return formValidation();">
+                <label for="lat">Latitude</label>
+                <input type="text" id="lat" name="lat" placeholder="Enter Latitude">
+                <label for="lng">Longitude</label>
+                <input type="text" id="lng" name="lng" placeholder="Enter Longitude">
+                <input type="submit" value="Submit">
+                <button type="button" onclick="return saveCoordinates();">Save Coordinates</button>
+                <button type="button" onclick="return clearCoordinates();">Clear Coordinates</button>
+                <h2>Results</h2>
+                <table class="table" id="table">
+                    <thead>
+                        <tr>
+                            <th>Label</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/apikey.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
+
